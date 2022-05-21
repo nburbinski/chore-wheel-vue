@@ -1,5 +1,5 @@
 <template>
-  <table>
+  <table v-if="this.chores.length > 0">
     <tr>
       <th></th>
       <th>Chore</th>
@@ -7,8 +7,6 @@
       <th>Assigned To</th>
     </tr>
     <tbody>
-      <p v-if="this.chores.length === 0">No chores to do</p>
-
       <!-- List all Chores -->
       <tr
         v-for="chore in this.chores"
@@ -38,6 +36,7 @@
       </tr>
     </tbody>
   </table>
+  <p v-else>No chores yet</p>
 </template>
 
 <script>
@@ -154,5 +153,12 @@ span > i {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+p {
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 0 25%;
+  border-radius: 5px;
 }
 </style>
