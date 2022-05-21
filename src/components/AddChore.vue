@@ -66,7 +66,7 @@ export default {
 
       // Clear inputs
       this.choreName = "";
-      this.assignedTo = "";
+      this.assignedTo = "randomUser";
       this.dueDate = new Date().toISOString().substr(0, 10);
 
       this.$store.dispatch("changeState", {
@@ -99,6 +99,10 @@ select {
   border: none;
   border-bottom: 2px solid rgb(168, 168, 152);
   width: 80%;
+}
+
+input:focus {
+  outline: none;
 }
 
 table {
