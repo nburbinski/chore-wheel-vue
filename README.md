@@ -21,6 +21,7 @@ npm run test:unit
 ```
 
 ### Run your end-to-end tests
+no e2e tests yet
 ```
 npm run test:e2e
 ```
