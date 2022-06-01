@@ -1,5 +1,8 @@
 # chore-wheel
 
+## Description
+This chore wheel was built in Vue utilizing Vue's Test Util to practice a TDD process
+
 ## Project setup
 ```
 npm install
